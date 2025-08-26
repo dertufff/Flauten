@@ -74,7 +74,7 @@ async def cmd_start(message: types.Message, state: FSMContext):
     try:
         if not await check_subscription(message.from_user.id):
             await message.answer(
-                "Для использования бота необходимо подписаться на мой канал, я надеюсь, что это вас не отпугнет))",
+                "Для использования бота необходимо подписаться на мой канал @pro_flauta, потом перезапустить бота командой /start. я надеюсь, что это вас не отпугнет))",
                 reply_markup=get_subscription_keyboard()
             )
             return
